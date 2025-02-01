@@ -2,11 +2,8 @@ name: Run JS App and Notify on Failure
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    paths:
+      - '**.js'
 
 jobs:
   build:
